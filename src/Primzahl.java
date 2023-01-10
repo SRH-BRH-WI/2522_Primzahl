@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Primzahl {
     public static void main(String[] args) {
-        int zahl = 1739;
+        Scanner eingabe = new Scanner(System.in);
+
+        System.out.print("Bitte zu prüfende Zahl eingeben: ");
+        int zahl = eingabe.nextInt();
 
         for (int teiler = 2; teiler < zahl; teiler++) {
             if (zahl % teiler == 0) {
